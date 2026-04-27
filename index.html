@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    ============================================================
+    SWE402 – Internet Programming
+    Project: Football Game Booking System
+    File:    index.html (Home Page)
+    ============================================================
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book football game slots easily with the SWE402 Football Game Booking System." />
+  <title>FootBook | Football Game Booking System</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="FootBook Home">
+        <span class="logo-icon" aria-hidden="true">⚽</span>
+        <span class="logo-text">Foot<span>Book</span></span>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="booking.html">Book a Slot</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="booking.html" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.85rem;">Book Now</a></li>
+      </ul>
+
+      <!-- Mobile Toggle Button -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+  <!-- END NAVIGATION -->
+
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span aria-hidden="true">🏟️</span>
+            <span>SWE402 – Internet Programming Project</span>
+          </div>
+
+          <h1 class="hero-title">
+            FOOTBALL
+            <span class="highlight">BOOKING</span>
+            SYSTEM
+          </h1>
+
+          <p class="hero-description">
+            Reserve your pitch slot at <strong style="color:var(--color-accent)">Altinbas Stadium</strong> in seconds.
+            Choose your time, gather your team, and play the beautiful game — all from one seamless platform.
+          </p>
+
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary btn-large">
+              ⚽ Book a Slot
+            </a>
+            <a href="#how-it-works" class="btn btn-outline btn-large">
+              How It Works
+            </a>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="hero-stats" role="list" aria-label="Platform statistics">
+            <div class="stat-item" role="listitem">
+              <div class="stat-number">6+</div>
+              <div class="stat-label">Daily Slots</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-number">22</div>
+              <div class="stat-label">Max Players</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Pitch Fields</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Graphic -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="field-graphic">
+
+            <!-- Floating info badge — top right -->
+            <div class="floating-badge badge-top">
+              <div class="badge-label">Next Open Slot</div>
+              <div class="badge-value">06:00 PM</div>
+            </div>
+
+            <!-- Main circle -->
+            <div class="field-circle">
+              <div class="field-icon">⚽</div>
+            </div>
+
+            <!-- Floating info badge — bottom left -->
+            <div class="floating-badge badge-bottom">
+              <div class="badge-label">Spots Left</div>
+              <div class="badge-value">8 / 22</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- END HERO -->
+
+
+  <!-- ==================== FEATURES SECTION ==================== -->
+  <section class="features-section" id="features" aria-labelledby="features-title">
+    <div class="container">
+
+      <div class="features-header">
+        <div class="accent-line" aria-hidden="true"></div>
+        <h2 class="section-title" id="features-title">WHY CHOOSE FOOTBOOK?</h2>
+        <p class="section-subtitle" style="margin: 0 auto; text-align: center;">
+          Everything you need to organize, book, and play — built for
+          university players and team organizers alike.
+        </p>
+      </div>
+
+      <div class="features-grid" role="list">
+
+        <!-- Feature 1 -->
+        <article class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">📅</span>
+          <h3>REAL-TIME SLOTS</h3>
+          <p>
+            Browse available time slots at a glance. Each card shows
+            capacity, pitch type, and spot availability — so you can
+            decide instantly.
+          </p>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">⚡</span>
+          <h3>INSTANT BOOKING</h3>
+          <p>
+            No queues, no phone calls. Fill out the form, submit, and
+            receive confirmation. The fastest path from idea to kickoff.
+          </p>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">👥</span>
+          <h3>TEAM MANAGEMENT</h3>
+          <p>
+            Specify your squad size when booking. We help you pick the
+            right pitch format — 5v5, 7v7, or full 11-a-side — for your
+            group.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- END FEATURES -->
+
+
+  <!-- ==================== HOW IT WORKS SECTION ==================== -->
+  <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+    <div class="container">
+
+      <div class="how-header">
+        <div class="accent-line" aria-hidden="true"></div>
+        <h2 class="section-title" id="how-title">HOW IT WORKS</h2>
+        <p class="section-subtitle" style="margin: 0 auto; text-align: center;">
+          Three simple steps from browsing to playing.
+        </p>
+      </div>
+
+      <div class="steps-row" role="list" aria-label="Booking steps">
+
+        <!-- Step 1 -->
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 1">01</div>
+          <h3>BROWSE SLOTS</h3>
+          <p>
+            View all available time slots for the day, sorted by
+            morning, afternoon, and evening sessions.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 2">02</div>
+          <h3>FILL YOUR DETAILS</h3>
+          <p>
+            Enter your name, email, preferred date, time slot, and
+            number of players in our simple form.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 3">03</div>
+          <h3>CONFIRM &amp; PLAY</h3>
+          <p>
+            Submit and receive your booking confirmation. Show up,
+            warm up, and enjoy the game!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- END HOW IT WORKS -->
+
+
+  <!-- ==================== CTA SECTION ==================== -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2 id="cta-heading">READY TO HIT THE PITCH?</h2>
+          <p>Slots fill up fast — secure yours before they're gone.</p>
+        </div>
+        <a href="booking.html" class="btn btn-primary btn-large">
+          Book a Slot Now →
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END CTA -->
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="FootBook Home">
+            <span class="logo-icon" aria-hidden="true">⚽</span>
+            <span class="logo-text">Foot<span>Book</span></span>
+          </a>
+          <p>
+            A university course project for SWE402 – Internet Programming.
+            Designed to demonstrate modern web development skills using
+            semantic HTML5 and pure CSS.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book a Slot</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+          </ul>
+        </nav>
+
+        <!-- Info -->
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul role="list">
+            <li><a href="#">Field Rules</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About This Project</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 <span class="accent">FootBook</span>. Built for
+          SWE402 – Internet Programming.
+        </p>
+        <p>Made with ❤️ using HTML &amp; CSS</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- ==================== MINIMAL JAVASCRIPT ==================== -->
+  <!--
+    Only used for the mobile hamburger toggle.
+    No libraries, no frameworks — pure vanilla JS.
+  -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links  = document.getElementById('navLinks');
+
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var isOpen = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        /* Close menu when a link is clicked (mobile UX) */
+        links.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            links.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
